@@ -1,3 +1,5 @@
+// Tutorial from https://youtube.com/watch?v=ymmtEgp0Tuc
+
 const canvas = document.getElementById('canvas1');
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
