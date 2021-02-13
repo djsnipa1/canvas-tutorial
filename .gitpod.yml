@@ -2,7 +2,6 @@ vscode:
   extensions:
     - ritwickdey.liveserver@5.6.1:5Mhl1RgVVDcIym163x8r+w==
     - ms-vscode.js-debug@1.52.2:8PDBHJwYVbbTyHsjB5DJSQ==
-<<<<<<< HEAD
 
 ports:
   - port: 8080
@@ -10,6 +9,3 @@ ports:
 
 tasks:
   - command: gp preview $(gp url 8080)tutorial5/index.html
-=======
-    - ritwickdey.vscode-live-server-plus-plus-0.0.1
->>>>>>> 6ebba86b6e458a6e4c52b19468b31f86272e4e7f
