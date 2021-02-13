@@ -54,8 +54,19 @@ function branchOut() {
   const centerX = mouse.x;
   const centerY = mouse.y;
   for (let i = 0; i < 3; i++){
-    const root = new Root(mouse.x, mouse.y, );
+    const root = new Root(mouse.x, mouse.y, 'pink', centerX, centerY);
+    root.draw();
     // x, y, color, centerX, centerY
-    
   }
 }
+
+window.addEventListener('resize', function(){
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+});
+
+window.addEventListener('mousemove', function(){
+    ctx.fillStyle = 'rgba(0, 0, 255, 0.03)';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    branchOut();
+});
