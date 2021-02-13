@@ -1,0 +1,22 @@
+{
+  "name": "canvas-tutorial",
+  "version": "1.0.0",
+  "description": "tutorials with the html5 canvas from Franks Labratory on YouTube",
+  "main": "tutorial5/index.html",
+  "scripts": {
+    "serve-gitpod": "cd tutorial5 && browser-sync -f *.html -f *.js --no-open --no-ui --listen 0.0.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djsnipa1/canvas-tutorial.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/djsnipa1/canvas-tutorial/issues"
+  },
+  "homepage": "https://github.com/djsnipa1/canvas-tutorial#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.14"
+  }
+}

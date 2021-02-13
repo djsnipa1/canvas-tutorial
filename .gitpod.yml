@@ -1,11 +1,9 @@
-vscode:
-  extensions:
-    - ritwickdey.liveserver@5.6.1:5Mhl1RgVVDcIym163x8r+w==
-    - ms-vscode.js-debug@1.52.2:8PDBHJwYVbbTyHsjB5DJSQ==
+tasks:
+  - init: npm install
+    command: npm run serve-gitpod
 
 ports:
-  - port: 8080
-    onOpen: ignore
-
-tasks:
-  - command: gp preview $(gp url 8080)tutorial5/index.html
+ - port: 3000
+   onOpen: open-preview
+ - port: 3001
+   onOpen: ignore
