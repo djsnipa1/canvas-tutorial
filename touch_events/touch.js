@@ -1,10 +1,16 @@
 // https://codepen.io/chad-boyce/pen/ExNmrJL
 
-canvasEl = document.getElementById('canvas');
-canvasEl.width = 640;
-canvasEl.height = 1136;
-canvas = canvasEl.getContext('2d');
+const canvasEl = document.getElementById('canvas');
+canvasEl.width = window.innerWidth;
+canvasEl.height = window.innerHeight;
+const canvas = canvasEl.getContext('2d');
 
+//window.addEventListener('resize', function () {
+//    canvasEl.width = window.innerWidth;
+//    canvasE.height = window.innerHeight;
+
+//});
+console.log(canvasEl.width);
 canvasEl.addEventListener('touchstart', function(e) {
   draw(e.changedTouches[0].pageX, e.changedTouches[0].pageY);
   draw(e.changedTouches[1].pageX, e.changedTouches[1].pageY);
