@@ -14,14 +14,14 @@ const mouse = {
     x: undefined,
     y: undefined
 }
-/*canvas.addEventListener('touchmove', function (event) {
-    mouse.x = event.x;
-    mouse.y = event.y;
-    for (let i = 0; i < 10; i++) {
+
+canvas.addEventListener('touchmove', function (event) {
+mouse.x = event.touches[0].clientX;
+mouse.y = event.touches[0].clientY;
+for (let i = 0; i < 10; i++) {
         particlesArray.push(new Particle());
     }
 });
-*/
 canvas.addEventListener('mousemove', function (event) {
     mouse.x = event.x;
     mouse.y = event.y;
