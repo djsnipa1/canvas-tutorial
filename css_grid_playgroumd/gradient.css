@@ -1,0 +1,72 @@
+.div {
+  border: 1px solid black;
+  height: 80%;
+  width: 80%;
+  border-radius: 20px;
+};
+
+
+.grad1 {
+  background: linear-gradient(123deg, #FFFCAC 0%, #FFFFFF 67%), linear-gradient(180deg, #D8D8D8 0%, #6B0000 100%), linear-gradient(142deg, #F9F5F0 0%, #F9F5F0 33%, #F2EAD3 calc(33% + 1px), #F2EAD3 56%, #F4991A calc(56% + 1px), #F4991A 62%, #321313 calc(62% + 1px), #321313 100%);
+background-blend-mode: multiply, overlay, normal;
+}
+/*.grad2 {
+  background: linear-gradient(123deg, #FFFCAC 0%, #FFFFFF 67%), linear-gradient(180deg, #D8D8D8 0%, #6B0000 100%), linear-gradient(142deg, #F9F5F0 0%, #F9F5F0 33%, #F2EAD3 calc(33% + 1px), #F2EAD3 56%, #F4991A calc(56% + 1px), #F4991A 62%, #321313 calc(62% + 1px), #321313 100%);
+background-blend-mode: multiply, overlay, normal;
+}
+*/
+
+.grad2 {
+  background: linear-gradient(123deg, #FFFCAC 0%, #FFFFFF 67%), linear-gradient(180deg, #D8D8D8 0%, #6B0000 100%), linear-gradient(142deg, #F9F5F0 0%, #F9F5F0 33%, #F2EAD3 calc(33% + 1px), #F2EAD3 56%, #F4991A calc(56% + 1px), #F4991A 62%, #321313 calc(62% + 1px), #321313 100%);
+  background-blend-mode: multiply, overlay, normal;
+  /*(142deg, #F9F5F0 0%, #F9F5F0 33%, #F2EAD3 calc(33% + 1px), #F2EAD3 56%, #F4991A calc(56% + 1px), #F4991A 62%, #321313 calc(62% + 1px), #321313 100%);
+  background-blend-mode: multiply, overlay, normal;*/
+
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  /*height: photo (Height);
+  width: photo (Width);*/
+ 
+}
+
+.square {
+  position: relative;
+  width: 75vw;
+ border-radius: 5vw;
+ 
+}
+
+.square:after {
+  content: "";
+  display: block;
+    padding-bottom: 100%;
+    
+
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+   
+}
+
+
+.rounded-corners-gradient-borders {
+  width: 75vw;
+ height: 80px;
+ /* border: double 4px transparent;*/
+  border-radius: 5vw;
+ /* background-image: linear-gradient(white, white), radial-gradient(circle at top left, #f00, #3020ff);*/
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+background: linear-gradient(123deg, #FFFCAC 0%, #FFFFFF 67%), linear-gradient(180deg, #D8D8D8 0%, #6B0000 100%), linear-gradient(142deg, #F9F5F0 0%, #F9F5F0 33%, #F2EAD3 calc(33% + 1px), #F2EAD3 56%, #F4991A calc(56% + 1px), #F4991A 62%, #321313 calc(62% + 1px), #321313 100%);
+background-blend-mode: multiply, overlay, normal;
+}
