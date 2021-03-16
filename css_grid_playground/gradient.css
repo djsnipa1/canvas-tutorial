@@ -68,8 +68,8 @@ background-blend-mode: multiply, overlay, normal;
 
 }
 .rounded-corners-gradient-borders {
-  width: 35vw;
-  height: 35vw;
+  width: 50vw;
+  height: 50vw;
   margin-bottom: 5vw;
   /* border: double 4px transparent;*/
   border-radius: 5vw;
@@ -80,16 +80,30 @@ background-blend-mode: multiply, overlay, normal;
   background-blend-mode: multiply, overlay, normal;
 }
 
+.newgrad {
+  width: 50vw;
+  height: 50vw;
+  margin-bottom: 5vw;
+  /* border: double 4px transparent;*/
+  border-radius: 5vw;
+  /* background-image: linear-gradient(white, white), radial-gradient(circle at top left, #f00, #3020ff);*/
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  background: linear-gradient(140.54deg, #608D00 0%, #D30000 72.37%), linear-gradient(58.72deg, #0029FF 0%, #8FFF00 100%), radial-gradient(100% 164.72% at 100% 100%, #6100FF 0%, #00FF57 100%), radial-gradient(100% 148.07% at 0% 0%, #FFF500 0%, #51D500 100%);
+background-blend-mode: color-dodge, overlay, difference, normal;
+}
 
-/* .rounded-corners-gradient-borders:after {
-  content: "";
-  display: block;
-  padding-bottom: 100%;
-
-
-} */
-
-
+.newgrad2 {
+width: 50vw;
+height: 50vw;
+margin-bottom: 5vw;
+border-radius: 5vw;
+background-origin: border-box;
+background-clip: content-box,
+border-box;
+background: linear-gradient(120deg, #FF0000 0%, #2400FF 100%), linear-gradient(120deg, #FA00FF 0%, #208200 100%), linear-gradient(130deg, #00F0FF 0%, #000000 100%), radial-gradient(110% 140% at 15% 90%, #ffffff 0%, #1700A4 100%), radial-gradient(100% 100% at 50% 0%, #AD00FF 0%, #00FFE0 100%), radial-gradient(100% 100% at 50% 0%, #00FFE0 0%, #7300A9 80%), linear-gradient(30deg, #7ca304 0%, #2200AA 100%);
+background-blend-mode: overlay, color, overlay, difference, color-dodge, difference, normal;
+}
 .box {
   width: 70%;
   height:200px;
