@@ -1,7 +1,10 @@
 body {
-    
+  background: #282828;
+  margin: 0;
+  padding: 0;
 }
-div {
+
+.div-text-shadow {
   position: absolute;
   padding: 15px 30px;
   font-size: 5rem;
